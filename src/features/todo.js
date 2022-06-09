@@ -3,7 +3,8 @@ export const todoSlice = createSlice({
     name: 'todo',
     initialState:{
         todos:[],
-        lastid:0
+        lastid:0,
+        filter:false
     },
     reducers:{
         add :(state,action )=>{
@@ -22,7 +23,11 @@ export const todoSlice = createSlice({
             state.todos.find(s => s.id === action.payload.id).disc = action.payload.disc;
             
         },
+        filerdone :(state,action )=>{
+            state.filter = !state.filter;
+            
+        },
     }
 });
-export const {add,done,edit}=todoSlice.actions
+export const {add,done,edit,filerdone}=todoSlice.actions
 export default todoSlice.reducer 

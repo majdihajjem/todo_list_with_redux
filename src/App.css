@@ -73,3 +73,14 @@
   border: none;
   margin-left: 20px;
 }
+.filterbutton{
+  border: none;
+  height: 30px;
+  width: 70px;
+  background-color:rgb(0, 155, 255);
+  border-radius: 12px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+
+}
